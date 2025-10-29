@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Kontak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Penanda bahwa ini adalah halaman index -->
+    <div class="head">
+      <a href="index.html" class="btn font-genshin semi-transparan">
+        <i class="fa-solid fa-backward"></i> Kembali ke halaman Index.html
+      </a>
+    </div>
+
+  <!-- Wrapper untuk gambar dan form kontak -->
+  <div class="profil-wrapper">
+
+    <!-- Gambar karakter -->
+    <div class="profil-gambar">
+      <img src="img/avatar-yelan.webp" alt="Karakter Yelan untuk halaman kontak" class="gambar-karakter">
+    </div>
+
+    <!-- Form kontak -->
+    <table class="tabel-profil">
+      <tr>
+        <td><label for="nama"><i class="fa-solid fa-user"></i> Nama</label></td>
+        <td><input type="text" id="nama" name="nama" required></td>
+      </tr>
+      <tr>
+        <td><label for="email"><i class="fa-solid fa-envelope"></i> Email</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="pesan"><i class="fa-solid fa-comment-dots"></i> Pesan</label></td>
+        <td><textarea id="pesan" name="pesan" rows="6" required></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="5" class= teks-kanan>
+          <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Kirim</button>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* Memastikan body dan html memenuhi seluruh layar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  position: relative;
+}
+
+/* Menambahkan background blur sebagai layer di belakang konten */
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/background.jpg') no-repeat center center / cover;
+  filter: blur(10px); /* Efek blur */
+  z-index: -1; /* Di belakang semua konten */
+}
+
+/* Judul halaman */
+.head {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Container Flexbox untuk card */
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card individual */
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+
+  width: 300px;
+}
+
+/* Gambar dalam card */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Tombol navigasi */
+.btn {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 10px 12px;
+  background-color: #1f1f1f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* Tombol semi-transparan */
+.semi-transparan {
+  opacity: 0.55;
+}
+
+/* Font khusus untuk tombol tengah */
+.font-genshin {
+  font-family: 'Genshin Impact', sans-serif;
+}
+
+/* Ikon Font Awesome */
+.btn i {
+  margin-right: 5px;
+}
+
+.teks-tengah{
+  text-align: center;
+}
+
+.teks-kiri{
+  text-align: left;
+}
+
+.teks-kanan{
+  text-align: right;
+}
+
+/* Wrapper untuk gambar dan tabel */
+.profil-wrapper {
+  display: flex;
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center;     /* Pusatkan secara vertikal */
+  gap: 20px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Background sama untuk keduanya */
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+/* Gambar karakter */
+.gambar-karakter {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* Tabel profil karakter */
+.tabel-profil {
+  border-collapse: collapse;
+  color: white;
+  font-size: 15px;
+}
+
+/* Baris dan sel tabel */
+.tabel-profil td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Baris terakhir tanpa border */
+.tabel-profil tr:last-child td {
+  border-bottom: none;
+}
